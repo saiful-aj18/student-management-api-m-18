@@ -24,10 +24,8 @@ app.get("/health", (req, res) => {
 
 
 app.use("/api/students", studentRoutes);
-
-
 app.use(notFound);
-
+app.use(errorHandler);
 
 
 
